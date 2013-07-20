@@ -1,11 +1,15 @@
 OntarioBabyNames
 ================
 
+http://github.com/MarkNenadov/OntarioBabyNames
+
+developed by Mark Nenadov (2013)
+
 A Django web-site based on baby name data (1917-2010) from "Ontario open data".
 
 Please note that the data set used for this excluded names that have less than 5 occurances in a particular year. 
 
-Contains information licensed under the Open Government Licence - Ontario.
+This distribution contains information licensed under the Open Government Licence - Ontario. See the end of this file for a link to details about that license.
 
 --
 
@@ -13,6 +17,8 @@ Basic Instructions
 
 1. Import the SQL schema file babynames.sql into your MySQL (this will take care of both the schema and the baby names data).
 2. Setup your Django install with the files included (do not forget to edit the settings.py to reflect your MySQL database). 
+
+--
 
 Optional Instructions
 
@@ -25,8 +31,6 @@ The full set of baby name data is contained the babynames.sql import. That said,
 
 --
 
-by Mark Nenadov (2013)
-	
 The code for this product is licensed under the LGPL. A copy of the LGPL should be included in a file called LICENSE.
 
 The data in the original CSV format (not provided in this software distribution) is licensed under the Open Government License - Ontario (see http://www.ontario.ca/government/open-government-licence-ontario). Under the terms of the license, the CSV data has been translated into MySQL insert statements (which are included in this distribution) 
