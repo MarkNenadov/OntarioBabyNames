@@ -3,7 +3,7 @@ import MySQLdb
 
 DB_HOST = "localhost"
 DB_USER = "mark"
-DB_PASSWORD = "xy123"
+DB_PASSWORD = "data9"
 DB_NAME = "data_monging"
 
 def insertCsvLineIntoDb( gender, record, cursor ):
@@ -12,7 +12,7 @@ def insertCsvLineIntoDb( gender, record, cursor ):
    occurances = record.split( "," )[2].replace("\r\n","")
    name = record.split( "," )[1]
    if year.isdigit():
-        sql = "INSERT INTO web_babyname (name, year, occurances) VALUES (\"" + name + "\", " + year + " , " + occurances + " )"
+        sql = "INSERT INTO web_baby_name_year (name, year, occurances, gender) VALUES (\"" + name + "\", " + year + " , " + occurances + ", '" + gender + "' )"
         try:
             unicode( sql, 'ISO-8859-1' )
             cursor.execute( sql )
