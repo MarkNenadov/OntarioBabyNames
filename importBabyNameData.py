@@ -3,7 +3,7 @@ import MySQLdb
 
 DB_HOST = "localhost"
 DB_USER = "mark"
-DB_PASSWORD = "data9"
+DB_PASSWORD = "blah"
 DB_NAME = "data_monging"
 
 def insertCsvLineIntoDb( gender, record, cursor ):
